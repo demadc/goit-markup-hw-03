@@ -54,8 +54,6 @@ img {
 	width: 1440px;
 	background: var(--white-text-color);
 	border-bottom: 1px solid var(--accent);
-
-	outline: 1px solid tomato;
 }
 
 .header-logo {
@@ -132,8 +130,6 @@ img {
 	height: 600px;
 
 	background-color: var(--dark);
-
-	outline: 2px solid tomato;
 }
 
 .hero-title {
@@ -195,27 +191,34 @@ img {
 
 .section-list.first {
 	display: flex;
+	justify-content: space-between;
 	padding: 120px 156px;
 }
-.first > .section-item {
-	width: calc((100%-72) / 4);
+.advantage .caption {
+	display: block;
+	text-align: left;
 }
+.advantage .caption-text {
+	display: block;
+	text-align: left;
+}
+
 .section-list.second {
 	display: flex;
-	padding: 120px 156px;
+	justify-content: center;
+	gap: 24px;
+	padding-top: 72px;
+	padding-left: 156px;
+	padding-right: 156px;
+	padding-bottom: 120px;
 }
-.second > .section-item {
-	width: calc((100%-48) / 3);
-}
+
 .section-list.third {
 	display: flex;
 	gap: 24px;
 	padding-left: 156px;
 	padding-right: 156px;
 	padding-bottom: 120px;
-}
-.third > .section-item {
-	width: calc((100%-72) / 4);
 }
 
 .section.team {
@@ -314,7 +317,6 @@ img {
 	color: var(--accent);
 
 	display: block;
-
 	padding-bottom: 100px;
 	padding-left: 156px;
 	padding-right: 1020px;
