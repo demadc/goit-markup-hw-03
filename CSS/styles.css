@@ -267,8 +267,6 @@ img {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
-	display: flex;
-	align-items: center;
 	text-align: center;
 	letter-spacing: 0.04em;
 	cursor: pointer;
@@ -276,11 +274,48 @@ img {
 	background: var(--light);
 	border: 1px solid var(--accent);
 	border-radius: 4px;
+	display: block;
+	min-height: 48px;
+	min-width: 69px;
 }
 .filter:hover,
 .filter:focus {
 	color: var(--white-text-color);
 	background-color: var(--button-active);
+}
+
+.section-list-btn {
+	display: flex;
+	justify-content: space-between;
+
+	padding-left: 472px;
+	padding-top: 96px;
+	padding-right: 472px;
+	padding-bottom: 72px;
+}
+.section-list.portfolio {
+	display: flex;
+	min-width: 1128px;
+
+	flex-wrap: wrap;
+	padding-left: 156px;
+	padding-right: 156px;
+	padding-bottom: 48px;
+	gap: 24px;
+}
+.section-item.portfolio {
+	display: block;
+	min-width: 360px;
+}
+.caption.portfolio {
+	display: block;
+
+	text-align: left;
+}
+.caption-text.portfolio {
+	display: block;
+
+	text-align: left;
 }
 
 /* ------------------/MAIN------------------- */
