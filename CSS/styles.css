@@ -11,24 +11,6 @@
 	--modal-bg: #fcfcfc;
 	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-body {
-	font-family: Roboto, sans-serif;
-	font-size: 16px;
-	letter-spacing: 0.02em;
-	color: var(--dark);
-	background-color: var(--white-text-color);
-	width: 100%;
-}
-/* ------------------COMPONENTS------------------- */
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-}
 
 h1,
 h2,
@@ -41,28 +23,45 @@ p {
 	margin-bottom: 0;
 }
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+
 img {
 	display: block;
 	max-width: 100%;
 	height: auto;
 }
-
 button {
 	cursor: pointer;
 }
-
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	color: var(--dark);
+	background-color: var(--white-text-color);
+}
+.container {
+	max-width: 1158px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
 .section {
-	width: 1440px;
-
 	outline: 2px solid tomato;
 }
+
+/* ------------------COMPONENTS------------------- */
 /* ------------------/COMPONENTS------------------- */
 
 /* ------------------HADER------------------- */
 
 .header {
-	display: flex;
-	width: 1440px;
 	background: var(--white-text-color);
 	border-bottom: 1px solid var(--accent);
 }
@@ -77,27 +76,30 @@ button {
 	text-transform: uppercase;
 	/* IRIS */
 	color: var(--primary-brand);
+	margin-right: 76px;
 }
-
 .navigation {
+	display: flex;
+	justify-content: space-between;
+}
+.nav {
 	display: flex;
 	align-items: center;
 	padding-left: 156px;
 }
-.header-list {
+.header-list.list {
+	display: flex;
+	gap: 40px;
+}
+
+.header-list.address {
 	display: flex;
 	gap: 40px;
 	padding-top: 24px;
 	padding-bottom: 24px;
-	padding-left: 76px;
-	padding-right: 156px;
 }
 
-.header-address {
-	margin-left: auto;
-}
-
-.header-link {
+.header-item {
 	font-weight: 500;
 	line-height: 1.5;
 	color: var(--dark);
@@ -108,15 +110,11 @@ button {
 	color: var(--button-active);
 }
 
-.header-link .current {
-	color: var(--primary-brand);
-}
 .header-address {
 	font-style: normal;
 }
-
-.header-mail,
-.header-tel {
+.header-list > .address,
+.header-item > .address {
 	font-weight: 400;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -124,10 +122,8 @@ button {
 	color: var(--text);
 }
 
-.header-mail:hover,
-.header-tel:hover,
-.header-tel:focus,
-.header-mail:focus {
+.header-link.address:hover,
+.header-link.address:focus {
 	color: var(--button-active);
 }
 
@@ -148,8 +144,6 @@ button {
 	color: var(--white-text-color);
 
 	padding-top: 188px;
-	padding-left: 472px;
-	padding-right: 472px;
 }
 
 .hero-btn {
@@ -164,7 +158,7 @@ button {
 	border: none;
 	border-radius: 4px;
 
-	display: flex;
+	display: block;
 	padding: 16px 32px;
 	margin-left: auto;
 	margin-right: auto;
@@ -185,6 +179,49 @@ button {
 	text-transform: capitalize;
 }
 
+.advantage-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.section-list.advantage {
+	display: flex;
+	gap: 24px;
+}
+.activity-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.section-list.activity {
+	display: flex;
+	gap: 24px;
+	margin-top: 72px;
+}
+.team-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background-color: var(--light);
+}
+.section-list.team {
+	display: flex;
+	gap: 24px;
+	margin-top: 72px;
+}
+.section-item.team {
+	background-color: var(--white-text-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+}
+.section-item.caption {
+	text-align: center;
+	margin-top: 32px;
+	margin-bottom: 8px;
+}
+.caption-text.team {
+	text-align: center;
+	padding-bottom: 32px;
+}
 .caption {
 	font-weight: 500;
 	letter-spacing: 0.02em;
@@ -259,9 +296,6 @@ button {
 /* ------------------FOOTER------------------- */
 
 .footer {
-	display: block;
-	width: 1440px;
-	min-height: 310px;
 	background-color: var(--dark);
 }
 .footer-logo {
@@ -286,8 +320,8 @@ button {
 	line-height: 1.5;
 	color: var(--accent);
 
+	padding-top: 16px;
 	padding-bottom: 100px;
 	padding-left: 156px;
-	padding-right: 1020px;
 }
 /* ------------------/FOOTER------------------- */
