@@ -230,6 +230,11 @@ p {
 	width: calc((100%-48px) / 3);
 }
 
+.section-team {
+	display: block;
+	width: 1440px;
+	background-color: var(--light);
+}
 .section-title.team {
 	display: block;
 	padding-top: 120px;
@@ -237,8 +242,36 @@ p {
 }
 
 .container-team {
+	display: block;
+
+	background: #ffffff;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+}
+
+.section-list.team {
+	display: flex;
+
 	padding-bottom: 120px;
 }
+.section-item.team {
+	display: block;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.section-item.caption {
+	display: block;
+	text-align: center;
+	padding-top: 32px;
+}
+
+.caption-text {
+	display: block;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 32px;
+}
+
 .filter {
 	font-family: inherit;
 	font-weight: 500;
